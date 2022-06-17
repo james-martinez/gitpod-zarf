@@ -1,0 +1,6 @@
+tasks:
+  - command: |
+      brew tap defenseunicorns/tap && brew install zarf
+      zarf completion bash > zarf_completion
+      source zarf_completion && rm zarf_completion
+      zarf init
